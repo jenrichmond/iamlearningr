@@ -1,0 +1,10 @@
+---
+title: "About this workshop"
+description: |
+  Here is how the BYOD R workshop will work
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
