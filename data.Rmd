@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-Often R learning resources use boring data examples that are embedded into base R (i.e. iris, mtcars). Sometimes you need a middle ground between these boring examples and your   "real" data, which sometimes can be a bit too real. 
+Often R learning resources use boring data examples that are embedded into base R (i.e. iris, mtcars). Sometimes you need a middle ground between these boring examples and your"real" data, which sometimes can be a bit too...real. 
 
 Here are a few places to find examples that are interesting to play with, but not too hard.
 
@@ -17,18 +17,35 @@ Here are a few places to find examples that are interesting to play with, but no
 Allison Horst recently posted a link to this penguin dataset on Twitter. Is it iris-esque, but about penguins! Data from the original paper were analysed to determine whether across different species of Antarctic penguins different characteristics predict whether the penguins are male or female. 
 
 - File: [penguin.csv](/data/penguins.csv)
-- ResearchQ: Do the characteristics that best predict whether an Antarctic penguin is male or female differ across species?
-- Original article: Gorman KB, Williams TD, Fraser WR (2014) Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus?Pygoscelis). PLoS ONE 9(3): e90081.
 - Data source: https://github.com/allisonhorst/penguins
 
 
+### Open Stats Lab
 
-# Open Stats Lab
+Open Stats Lab is an initiative that takes open source data from papers published in Psychological Science and makes intro statistics lessons (including using R). You can find great data examples on the [Open Stats Lab site](https://sites.trinity.edu/osl/data-sets-and-activities). 
 
+A couple of examples...
 
+- File: [Beall_Hofer_Schaller_Study1.csv](/data/Beall_Hofer_Schaller_Study1.csv))
+- ResearchQ: Do Outbreaks of Infectious Diseases Influence Voting Behavior?
+- Original article: Beall, A. T., Hofer, M. K., & Shaller, M. (2016). Infections and elections: Did an Ebola outbreak influence the 2014 U.S. federal elections (and if so, how)??Psychological Science, 27,?595-605.
+- Data source: [Open Stats Lab](https://sites.trinity.edu/osl/data-sets-and-activities/correlation-activities)
+
+- File: [ZhangStudy3.csv](/data/ZhangStudy3.csv)
+- Research Q: Do People Underestimate the Pleasure of Remembering Ordinary vs. Extraordinary Events?
+- Original article: Zhang, T., Kim, T., Brooks, A. W., Gino, F., & Norton, M. I. (2014). A "present" for the future: The unexpected value of rediscovery.?Psychological Science, 25,?1851-1860. 
+- Data source: [Open Stats Lab](https://sites.trinity.edu/osl/data-sets-and-activities/factorial-anova-activities)
 
 # Make your own
 
-
+Download your FitBit data, use a google form to poll your friends, create a fake dataset that has similar characteristics to your thesis data. I've used google forms to ask people about their [favourite things](/data/my_favourite_things.csv) and to track my [crappy internet speed](/data/crappy_internet.csv) during lockdown.
 
 # Tidy Tuesday 
+
+Each Tuesday Thomas Mock releases a dataset on the [Tidy Tuesday github](https://github.com/rfordatascience/tidytuesday), people all over the world plot the data to show soemthing interesting and then post their plot to twitter using the hastag #tidytuesday. 
+
+
+# Other options
+
+Vicki Boykis has compiled a list of relatively small [open datasets](http://veekaybee.github.io/2018/07/23/small-datasets/) on her blog. 
+

@@ -62,3 +62,8 @@ If you are keen to go beyond wrangling and visualising and to get some analysis 
 ```{r lsr, echo=FALSE, fig.cap="Learning Statistics with R by Dani Navarro", out.width= 400}
 knitr::include_graphics("img/lsr.png")
 ```
+
+### 7. Statistics of DOOM by Erin Buchanan
+
+If you like to watch youtube and learn stats, rather than read and learn stats, try Dr Erin Buchanan's [Statistics of DOOM](https://www.youtube.com/channel/UCMdihazndR0f9XBoSXWqnYg) youtube channel and associated [website](https://statisticsofdoom.com/). She is an A/Prof at Missouri State and teaches tons of stats courses and gives them all away. 
+
