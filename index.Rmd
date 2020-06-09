@@ -12,7 +12,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### 1. The R-Studio Education site
 
-[Alison Hill](@apreshill) and her team at RStudio have pulled together the best resources for beginners at the RStudio Education site. Cute art by [Desiree de Leon](@descoyssle) make the site a joy to explore. 
+[Alison Hill](@apreshill) and her team at RStudio have pulled together the best resources for beginners at the RStudio Education site. Cute art by [Desiree de Leon](@dcossyle) make the site a joy to explore. 
+
 
 ```{r rsed, echo=FALSE, fig.cap="The Beginners page from R-Studio Education", out.width= 400}
 
@@ -37,7 +38,16 @@ Dani has made a great site pulling her [Robust Tools course](https://robust-tool
 knitr::include_graphics("img/robust.png")
 ```
 
-### 4. R for Data Science book
+
+### 4. Teacup Giraffes
+
+If you are looking for a gentle introduction to R and statistics and like a bit of cute, the [statistics and teacup giraffe modules](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html) by Desiree de Leon and Hasse Walum are for you. 
+
+```{r giraffe, echo=FALSE, fig.cap="Learning about standard deviation with Teacup Giraffes", out.width= 400}
+knitr::include_graphics("img/giraffe.png")
+```
+
+### 5. R for Data Science book
 
 If books are more your scene, the free online R for Data Science book by Hadley Wickham is free online. Its definitely worth checking out this tidyverse bible. 
 
@@ -45,9 +55,9 @@ If books are more your scene, the free online R for Data Science book by Hadley 
 knitr::include_graphics("img/r4ds.png")
 ```
 
-### 5. Learning Statistics with R (by Danielle Navarro)
+### 6. Learning Statistics with R (by Danielle Navarro)
 
-If you are keen to go beyond wrangling and visualising and to get some analysis done in R, Dani's book is a agreat palce to start. It is genuinely fun to read (uncommon for a stats book) and covers basic statistical analysis. Also free and available online. 
+If you are keen to go beyond wrangling and visualising and to get some analysis done in R, Dani's book is a great place to start. It is genuinely fun to read (uncommon for a stats book) and covers basic statistical analysis. Also free and available online. 
 
 ```{r lsr, echo=FALSE, fig.cap="Learning Statistics with R by Dani Navarro", out.width= 400}
 knitr::include_graphics("img/lsr.png")

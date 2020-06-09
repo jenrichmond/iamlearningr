@@ -1,0 +1,34 @@
+---
+title: "Looking for data?"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Often R learning resources use boring data examples that are embedded into base R (i.e. iris, mtcars). Sometimes you need a middle ground between these boring examples and your   "real" data, which sometimes can be a bit too real. 
+
+Here are a few places to find examples that are interesting to play with, but not too hard.
+
+# Penguins
+
+Allison Horst recently posted a link to this penguin dataset on Twitter. Is it iris-esque, but about penguins! Data from the original paper were analysed to determine whether across different species of Antarctic penguins different characteristics predict whether the penguins are male or female. 
+
+- File: [penguin.csv](/data/penguins.csv)
+- ResearchQ: Do the characteristics that best predict whether an Antarctic penguin is male or female differ across species?
+- Original article: Gorman KB, Williams TD, Fraser WR (2014) Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus?Pygoscelis). PLoS ONE 9(3): e90081.
+- Data source: https://github.com/allisonhorst/penguins
+
+
+
+# Open Stats Lab
+
+
+
+# Make your own
+
+
+
+# Tidy Tuesday 
