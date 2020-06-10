@@ -17,7 +17,8 @@ output:
       countIncrementalSlides: true
       ratio: "16:9"
 params:
-  site_link: "INSERT SLIDES LINK HERE"
+  site_link: "https://iamlearningr.netlify.app/workshop/slides"
+  questions_link: "https://tinyurl.com/iamlearningrQs"
 ---
 
 ```{r setup, include=FALSE}
@@ -47,14 +48,18 @@ class: title-slide, center, middle
 
 ## `r rmarkdown::metadata$subtitle`
 
-### `r rmarkdown::metadata$author` &#183; `r rmarkdown::metadata$institution`
+### [`r params$site_link`](`r params$site_link`)
 
-#### [`r params$site_link`](`r params$site_link`)
+### [`r params$questions_link`](`r params$questions_link`)
+
+
+
+
 
 ---
 layout: true
 
-<div class="my-footer"><span>`r params$site_link`</span></div>
+<div class="my-footer"><span>`r params$questions_link`</span></div>
 
 ---
 
