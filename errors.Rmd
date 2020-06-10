@@ -1,0 +1,40 @@
+---
+title: "dealing with error messages"
+author: "JuliaB"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+As you learn to work in R, you will notice that when R doesn't understand your code it will flash a red error at you. These can look a little like this:
+
+```
+Error in addup(.) : could not find function "addup"
+
+```
+
+Most of the time these errors are explicit enough for you to locate the fault and fix it. For example, the error above is clearly telling you that the function addup does't exist. Maybe that is because you misspelt something or perhaps you haven't loaded the package that has that function in it.  Most errors are due to simple mistakes like not closing all the brackets, misspelling something, missing a comma etc. 
+
+However, sometimes you might get more complicated sounding errors like this:
+
+```
+
+Error in codetools:::walkCode(ee, w) : 
+  argument "ee" is missing, with no default
+  
+```
+  
+This example doesn't look nearly as friendly. This time it looks like a different language to you and that is totally normal. The best thing to do in this situation is to copy the error and paste it into google. Someone somewhere has probably had that error before and has asked the internet about it; maybe their solution will work for you too. 
+
+Be careful though...  errors may sometimes include variable names or other words specific to your data so it is best to avoid including these components in the google search.
+
+
+# not all messages are errors
+
+Sometimes R is just trying to be helpful and what looks like an error message is just a warning or a reminder and not an error at all. Its only an error, if your code didn't do what it was supposed to do. Don't get too freaked out by the red, just read the messages carefully. 
+
+
+

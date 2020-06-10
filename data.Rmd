@@ -12,7 +12,12 @@ Often R learning resources use boring data examples that are embedded into base 
 
 Here are a few places to find examples that are interesting to play with, but not too hard.
 
-# Penguins
+# Data from github
+
+Often generous people will pull interesting data into an R package and post it on github. The ozbabynames package came out of an ROpenScience OzUnconf a few years ago and includes the frequency of babies born with particular names over time. 
+
+- File: [babynames.csv](/data/babynames.csv)
+- Data source: https://github.com/ropenscilabs/ozbabynames
 
 Allison Horst recently posted a link to this penguin dataset on Twitter. Is it iris-esque, but about penguins! Data from the original paper were analysed to determine whether across different species of Antarctic penguins different characteristics predict whether the penguins are male or female. 
 

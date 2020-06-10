@@ -30,7 +30,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r packages, include=FALSE}
-library(countdown)
+#library(countdown)
 library(here)
 
 ```
@@ -73,6 +73,8 @@ layout: true
 5. Getting summary stats
 
 6. Using ggplot to visualise your data 
+
+... other things you might be interested in...
 
 <br>
 
@@ -129,7 +131,6 @@ class: center, middle
  
 # 1. Why R?
 
-Breakout 1 : why do you want to learn R?
 
 
 ---
@@ -223,11 +224,11 @@ class: inverse
 
 .pull-left[
 
-- Go to this link https://tinyurl.com/do-re-mi-aimos
+- Go to this link INSERT LINK CLOUD SPACE
 
 - Sign up for an RStudio Cloud account
 
-- Once at the Welcome screen, choose Projects, do-re-mi
+- Once at the Welcome screen, choose Projects, my-first-R-project
 
 - Let it deploy (it will chug a little bit)
 
@@ -243,7 +244,7 @@ knitr::include_graphics("img/cloud.png")
 ``` 
 ]
 ```{r echo=FALSE}
-countdown(minutes = 3, seconds = 00)
+#countdown(minutes = 3, seconds = 00)
 ```
 
 ---
@@ -282,7 +283,7 @@ knitr::include_graphics("img/redecorate.png")
 ```
 
 ```{r echo=FALSE}
-countdown(minutes = 4, seconds = 00)
+#countdown(minutes = 4, seconds = 00)
 ```
 
 ]
@@ -386,25 +387,25 @@ Step 1. In your console, install the following packages...
 - janitor
 - here
 - beepr
-- skimr
+
 
 ```{r eval = FALSE}
 install.packages("packagename")
 ```
 
-Step 2. Then open the Rmd_demo_babynames.Rmd file and find the grey "chunk" that has  `library(tidyverse)` in it. Add these below to load the following packages. 
+Step 2. Then open the get-your-data-in.Rmd file and find the grey "chunk" that has  `library(tidyverse)` in it. Add these below to load the following packages. 
 
 ```
 library(janitor) 
 library(here)
 library(beepr)
-library(skimr)
+
 
 ```
 Run the code in the chunk using the little green arrow on the right 
 
 ```{r echo=FALSE}
-countdown(minutes = 4, seconds = 00)
+#countdown(minutes = 4, seconds = 00)
 ``` 
 
 
@@ -429,7 +430,8 @@ knitr::include_graphics("img/questions2.jpg")
 .pull-left[
 
 RMarkdown documents (or .Rmd files) are key to reproducible analysis. 
-- notes/explanations + "chunks" of R code 
+- white bits = notes/explanations 
+- grey bits = "chunks" of R code 
 - "knit" the document (notes + code + output) into a nice format that other people (who may not know R) can access. 
 
 ### Tricks and tips
@@ -477,7 +479,7 @@ Then choose "Knit" and check out the output.
 <br>
 
 ```{r echo=FALSE}
-countdown(minutes = 2, seconds = 00)
+#countdown(minutes = 2, seconds = 00)
 ```
 
 
@@ -556,7 +558,7 @@ my_data_in_r <- read_csv(here("data_folder", "filename.csv"))
 - Step 5: Knit your document (** use the cog to change the display option to Show Code and Output)
    
 ```{r echo=FALSE}
-countdown(minutes = 10, seconds = 00)
+#countdown(minutes = 10, seconds = 00)
 ```
    
 
@@ -592,7 +594,7 @@ class: center, middle
 ### Next up.... your own data
 
 ```{r echo=FALSE}
-countdown(minutes = 5, seconds = 00)
+#countdown(minutes = 5, seconds = 00)
 ```
 
 ---
@@ -623,7 +625,7 @@ my_data_in_R <- read_csv(here("data_folder", "filename.csv"))
 - Step 7: Have a look at your data, any obvious problems?
 
 ```{r echo=FALSE}
-countdown(minutes = 5, seconds = 00)
+#countdown(minutes = 5, seconds = 00)
 ``` 
    
 
@@ -747,7 +749,7 @@ better_data_in_R <- your_data_in_R %>%
 ```
 
 ```{r echo=FALSE}
-countdown(minutes = 15)
+#countdown(minutes = 15)
 ``` 
 
 ---
@@ -893,7 +895,7 @@ longdata <- wide %>%
 ```
 
 ```{r echo=FALSE}
-countdown(minutes = 15, seconds = 00)
+#countdown(minutes = 15, seconds = 00)
 ``` 
 
 ---
@@ -918,7 +920,7 @@ class: center, middle
 ### Next up.... summary stats & plotting
 
 ```{r echo=FALSE}
-countdown(minutes = 10, seconds = 00)
+#countdown(minutes = 10, seconds = 00)
 ```
 
 ---
@@ -1007,7 +1009,7 @@ summary_stats <- yourdata %>%
 > Heads Up: do you need na.rm = TRUE?
 
 ```{r echo=FALSE}
-countdown(minutes = 10, seconds = 00)
+#countdown(minutes = 10, seconds = 00)
 ``` 
 
 ---
@@ -1097,7 +1099,7 @@ Image credit: [Allison Horst](https://github.com/allisonhorst/stats-illustration
 ]
 
 ```{r echo=FALSE}
-countdown(minutes = 10, seconds = 00)
+#countdown(minutes = 10, seconds = 00)
 ``` 
 
 ---

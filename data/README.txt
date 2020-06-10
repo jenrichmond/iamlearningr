@@ -1,3 +1,6 @@
+File: babynames.csv
+Data source: ozbabynames package https://github.com/ropenscilabs/ozbabynames
+
 File: Beall_Hofer_Schaller_Study1.csv
 ResearchQ: Do Outbreaks of Infectious Diseases Influence Voting Behavior?
 Original article: Beall, A. T., Hofer, M. K., & Shaller, M. (2016). Infections and elections: Did an Ebola outbreak influencethe 2014 U.S. federal elections (and if so, how)??Psychological Science, 27,?595-605.

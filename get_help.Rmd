@@ -1,0 +1,26 @@
+---
+title: "How to get R help"
+author: "JuliaB"
+output: html_document
+---
+
+
+### ask Google 
+
+Google is your best friend when you are looking for help with R issues; there are loads of blogs, websites and videos out there to help you. Sometimes there are TOO many resources; the overload sometimes means that you may find it difficult to find what you are looking for, especially if you are not sure how to use the correct R-speak. 
+
+So, when searching for a solution to an R-related problem information think of the best way to word what you are looking for, use the correct dataframe terms like 'columns' and 'rows' and R jargon like 'function'. Try not to use too many words, ask for what you want to do and add 'R' or 'rstats' at the end (there are many other programmes for statistical computing which code differently so make sure you specify R in your search).
+
+### ask an expert
+
+Sometimes the issue might be specific to your data so it might be difficult to find an example just like yours online. One way to overcome that is by making a post in an R community, and see if someone responds. 
+
+My favourite website for this is ['Stack Overflow'](https://stackoverflow.com/) which is a question and answer site for professional and enthusiast programmers. You can get answers to your questions very quickly and it is a great way to share your knowledge and collaborate with others who are also working in R. The RStudio community is another community that welcomes you to share your problems https://community.rstudio.com/. 
+
+###  watch an expert
+
+Sometimes it is helpful to watch someone else use a function/package to learn how it works. Reading a bunch of code might look confusing and scary but when you watch that code being typed out and explained is a much more beneficial experience especially for new R learners trying to grasp what R is all about. Googling "how to use X function in R youtube" is often a good alternative.  Asking a question on twitter and adding the #rstats hashtag often results in a host of generous people who offer to help. 
+
+### help people help you
+
+When asking for help it is a good idea to do a bit of leg work to help people help you. If your problem is really specific to your dataset, making an example dataset that captures the problem but it is bit simpler is a good idea. There is even a package to help you do that. Check out the [reprex (aka reproducible example) package](https://github.com/tidyverse/reprex) by Jenny Bryan. 
