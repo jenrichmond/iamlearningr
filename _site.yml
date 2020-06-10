@@ -20,5 +20,5 @@ navbar:
         - text: "about"
           href: about.html
         - text: "slides"
-          href: workshop_slides/workshop-slides.html
+          href: workshop/slides.html
 output: distill::distill_article
