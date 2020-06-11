@@ -147,13 +147,13 @@ class: center, middle
 
 ### [Reproducibility](https://www.nature.com/articles/s41559-017-0160)
 
-### [One stop shop](https://twitter.com/kara_woo/status/1100908125396193281) 
+### [One stop shop](https://datahowler.wordpress.com/2016/09/10/no-more-excuses-r-is-better-than-spss-for-psychology-undergrads-and-students-agree/) 
 
 ### [Equity](https://rfortherestofus.com/2019/07/equity/)
 
 ### [Community](https://qz.com/work/1661486/r-ladies-made-data-science-inclusive/)
 
-### [Fun!](https://headrush.typepad.com/creating_passionate_users/2005/06/kicking_ass_is_.html) 
+### [Fun!](https://twitter.com/kara_woo/status/1100908125396193281) 
 
 ] 
 
