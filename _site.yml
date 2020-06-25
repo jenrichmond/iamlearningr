@@ -7,10 +7,11 @@ navbar:
   right:
     - text: "home"
       href: index.html
-    - text: "data"
-      href: data.html
+    
     - text: "tips"
       menu:
+        - text: "data"
+          href: data.html
         - text: "errors"
           href: errors.html
         - text: "get help"
