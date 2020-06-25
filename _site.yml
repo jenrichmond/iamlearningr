@@ -15,6 +15,8 @@ navbar:
           href: errors.html
         - text: "get help"
           href: get_help.html
+        - text: "read"
+          href: read.html
     - text: "workshop"
       menu: 
         - text: "about"

@@ -888,6 +888,8 @@ longdata <- wide %>%
                   values_to = "new_values_col", col1:col6)
 ```
 
+Looking for practice examples- check out this RStudio Cloud project https://rstudio.cloud/project/488950
+
 ```{r echo=FALSE}
 #countdown(minutes = 15, seconds = 00)
 ``` 

@@ -1,0 +1,26 @@
+---
+title: "useful reading"
+author: "Jen Richmond"
+output: html_document
+---
+
+When you start to dip your toes into the world of repoducible analysis and open science, a whole new world of useful things to read opens up. The list below contains papers about how data science principles might apply to "real" science, because if you are a scientist, you are at the core a data scientist. 
+
+
+### Open Science
+
+1. Lowndes, J., Best, B., Scarborough, C. et al. (2017). Our path to better science in less time using open data science tools. Nature Ecology & Evolution 1, 0160 (2017). https://doi.org/10.1038/s41559-017-0160
+
+
+### Workflow
+
+Broman, K., & Woo, K., (2018). Data Organization in Spreadsheets, American Statistician, 72, 2-10. https://doi.org/10.1080/00031305.2017.1375989
+
+
+
+
+### Git and Github
+
+Bryan, J., (2018). Excuse Me, Do You Have a Moment to Talk About Version Control? American Statistician, 72, 20-27. https://doi.org/10.1080/00031305.2017.1399928
+
+If you are looking to get started with git and github, you can't go past Jenny Bryan's www.happygitwithr.com site. 

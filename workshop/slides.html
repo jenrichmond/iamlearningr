@@ -4,7 +4,7 @@
     <title>Let’s start at the very beginning</title>
     <meta charset="utf-8" />
     <meta name="author" content="Jenny Richmond" />
-    <meta name="date" content="2020-06-23" />
+    <meta name="date" content="2020-06-25" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/countdown/countdown.css" rel="stylesheet" />
     <script src="libs/countdown/countdown.js"></script>
@@ -213,7 +213,7 @@ class: inverse
 
 &lt;img src="img/cloud.png" width="500px" /&gt;
 ]
-<div class="countdown" id="timer_5ef1e822" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ef3ebbd" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -248,7 +248,7 @@ Then try out a few Editor themes and choose one you like.
 
 &lt;img src="img/redecorate.png" width="600px" /&gt;
 
-<div class="countdown" id="timer_5ef1ea17" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ef3e91c" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -369,7 +369,7 @@ library(janitor)
 ```
 Run the code in the chunk using the little green arrow on the right 
 
-<div class="countdown" id="timer_5ef1ead9" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ef3eb01" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -438,7 +438,7 @@ Then choose "Knit" and check out the output.
 
 &lt;br&gt;
 
-<div class="countdown" id="timer_5ef1e82b" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ef3ea83" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -509,7 +509,7 @@ my_data_in_r &lt;- read_csv(here("data_folder", "filename.csv"))
    
 - Step 5: Knit your document 
    
-<div class="countdown" id="timer_5ef1e827" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ef3e8ed" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
    
@@ -573,7 +573,7 @@ my_data_in_R &lt;- read_csv(here("data_folder", "filename.csv"))
    
 - Step 7: Have a look at your data, any obvious problems?
 
-<div class="countdown" id="timer_5ef1e8a7" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ef3e87c" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
    
@@ -706,7 +706,7 @@ betterdata &lt;- yourdata %&gt;%
   
 ```
 
-<div class="countdown" id="timer_5ef1e81e" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ef3ebc4" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -734,8 +734,6 @@ class: center
 ### To do list...
 
 1. make your data tidy (i.e. convert it from wide format into long format)
-2. use summary(), skim(), and group_by() + summarise() to get summary stats
-3. the basics of ggplot
 
 ]
 
@@ -814,6 +812,8 @@ longdata &lt;- wide %&gt;%
       pivot_longer(names_to = "new_names_col", 
                   values_to = "new_values_col", col1:col6)
 ```
+
+Looking for practice examples- check out this RStudio Cloud project https://rstudio.cloud/project/488950
 
 
 

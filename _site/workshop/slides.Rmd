@@ -794,11 +794,15 @@ knitr::include_graphics("img/questions4.jpg")
 
 .pull-left[
 
-### the rest of these slides cover...
+### Done list...
 
-1. how to make your data tidy (i.e. convert it from wide format into long format)
-2. how to use summary(), skim(), and group_by() + summarise() to get summary stats
-3. the basics of ggplot
+1. find your way around RStudio
+2. get your data in using read_csv() and here()
+3. clean it up with select(), clean_names(), and rename()
+
+### To do list...
+
+1. make your data tidy (i.e. convert it from wide format into long format)
 
 ]
 
@@ -807,41 +811,6 @@ knitr::include_graphics("img/questions4.jpg")
 <iframe src="https://giphy.com/embed/ZdUnQS4AXEl1AERdil" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Friends-season-6-friends-tv-episode-602-ZdUnQS4AXEl1AERdil">via GIPHY</a></p>
 
 ]
-
----
-
-# Recommended learning resources
-
-### RYouWithMe (online course)
-
-https://rladiessydney.org/courses/ryouwithme/
-
-### R for Data Science (free e-book)
-
-https://r4ds.had.co.nz/
-
-### RStudio Education site (lots of great resources)
-
-https://education.rstudio.com/
-
-
----
-
-class: centre
-
-# Until next time....
-
-<iframe src="https://giphy.com/embed/xIJLgO6rizUJi" width="480" height="367" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/alice-in-wonderland-thank-you-xIJLgO6rizUJi">via GIPHY</a></p>
-
-
----
-
-# Keep working through these slides to learn about
-
-### pivot_longer() and pivot_wider()
-### summary(), skim(), group_by() %>% summarise()
-### ggplot() 
-
 
 ---
 
@@ -881,6 +850,7 @@ knitr::include_graphics("img/wide_long.png")
 # pivot_longer() from `tidyr`
 
 ### pivot_longer wants to know 3 things
+
 1. names_to = what you want to call the new column containing the names of the columns 
 2. values_to = what you want to call the new column containing the values 
 3. the range of columns that you want to make long (col1:col6)
@@ -917,6 +887,8 @@ longdata <- wide %>%
       pivot_longer(names_to = "new_names_col", 
                   values_to = "new_values_col", col1:col6)
 ```
+
+Looking for practice examples- check out this RStudio Cloud project https://rstudio.cloud/project/488950
 
 ```{r echo=FALSE}
 #countdown(minutes = 15, seconds = 00)
@@ -1162,3 +1134,27 @@ Or check out the [R Graph Gallery](https://www.r-graph-gallery.com/index.html) f
 
 ---
 
+# Recommended learning resources
+
+### RYouWithMe (online course)
+
+https://rladiessydney.org/courses/ryouwithme/
+
+### R for Data Science (free e-book)
+
+https://r4ds.had.co.nz/
+
+### RStudio Education site (lots of great resources)
+
+https://education.rstudio.com/
+
+---
+
+class: centre
+
+# Until next time....
+
+<iframe src="https://giphy.com/embed/xIJLgO6rizUJi" width="480" height="367" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/alice-in-wonderland-thank-you-xIJLgO6rizUJi">via GIPHY</a></p>
+
+
+---
