@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
+test whether these errors are actually errors- will it knit and render properly
+
 ### 1. [The R-Studio Education site](https://education.rstudio.com/)
 
 [Alison Hill](@apreshill) and her team at RStudio have pulled together the best resources for beginners at the RStudio Education site. Cute art by [Desiree de Leon](@dcossyle) make the site a joy to explore. 
