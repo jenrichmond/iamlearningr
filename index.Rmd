@@ -6,11 +6,14 @@ site: distill::distill_website
 ---
 
 ```{r setup, include=FALSE}
+
 knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-test whether these errors are actually errors- will it knit and render properly
+# I KEEP GETTING BUILD ERRORS
+
+### --- will this render when I push to git??
 
 ### 1. [The R-Studio Education site](https://education.rstudio.com/)
 

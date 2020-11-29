@@ -4,7 +4,7 @@ author: "Jen Richmond"
 output: html_document
 ---
 
-When you start to dip your toes into the world of repoducible analysis and open science, a whole new world of useful things to read opens up. The list below contains papers about how data science principles might apply to "real" science, because if you are a scientist, you are at the core a data scientist. 
+When you start to dip your toes into the world of reproducible analysis and open science, a whole new world of useful things to read opens up. The list below contains papers about how data science principles might apply to "real" science, because if you are a scientist, you are at your core, a data scientist. 
 
 
 ### Open Science
