@@ -1,0 +1,74 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About",
+      "description": "Here is how the workshop will work",
+      "author": [],
+      "contents": "\nThe plan is to run weekly lunch time “code club” sessions, just for an hour or so over the next few weeks to help you get your head around what R is useful for and how you might use it with YOUR data.\nI ran a workshop at the AIMOS conference in Melbourne last year and the goal would be to cover the same kind of thing.\nwhy you might want to use R\nhow to get data into R and cleaned up a bit\nhow to get summary stats\nhow to use the power of R to visualise your data\nI think there will be at least 3 sessions but we will play it by ear a little.\nOften with R training workshops they have you working with beautifully clean sample data, and that makes it tough when you get back to your lab and discover that your data is not at all behaving in the same way. In these sessions, we will go SUPER SLOW and have you working with your OWN data (if you already have it), so that we don’t run into generalisation problems (hopefully).\nWe will start in Week 2, on Thursdays at 1pm. Access via zoom…\nhttps://unsw.zoom.us/j/99976541554\n\n\n\n",
+      "last_modified": "2020-12-01T08:34:47+11:00"
+    },
+    {
+      "path": "data.html",
+      "title": "Looking for data?",
+      "description": "Some tips for finding fun data to play with.\n",
+      "author": [
+        {
+          "name": "Jenny Richmond",
+          "url": "https://example.com/norajones"
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\nOften R learning resources use boring data examples that are embedded into base R (i.e. iris, mtcars). Sometimes you need a middle ground between these boring examples and your“real” data, which sometimes can be a bit too…real.\nHere are a few places to find examples that are interesting to play with, but not too hard.\nData from github\nOften generous people will pull interesting data into an R package and post it on github. The ozbabynames package came out of an ROpenScience OzUnconf a few years ago and includes the frequency of babies born with particular names over time.\nFile: babynames.csv\nData source: https://github.com/ropenscilabs/ozbabynames\nAllison Horst recently posted a link to this penguin dataset on Twitter. Is it iris-esque, but about penguins! Data from the original paper were analysed to determine whether across different species of Antarctic penguins different characteristics predict whether the penguins are male or female.\nFile: penguin.csv\nData source: https://github.com/allisonhorst/penguins\nOpen Stats Lab\nOpen Stats Lab is an initiative that takes open source data from papers published in Psychological Science and makes intro statistics lessons (including using R). You can find great data examples on the Open Stats Lab site.\nA couple of examples…\nFile: Beall_Hofer_Schaller_Study1.csv)\nResearchQ: Do Outbreaks of Infectious Diseases Influence Voting Behavior?\nOriginal article: Beall, A. T., Hofer, M. K., & Shaller, M. (2016). Infections and elections: Did an Ebola outbreak influence the 2014 U.S. federal elections (and if so, how)??Psychological Science, 27,?595-605.\nData source: Open Stats Lab\nFile: ZhangStudy3.csv\nResearch Q: Do People Underestimate the Pleasure of Remembering Ordinary vs. Extraordinary Events?\nOriginal article: Zhang, T., Kim, T., Brooks, A. W., Gino, F., & Norton, M. I. (2014). A “present” for the future: The unexpected value of rediscovery.?Psychological Science, 25,?1851-1860.\nData source: Open Stats Lab\nMake your own\nDownload your FitBit data, use a google form to poll your friends, create a fake dataset that has similar characteristics to your thesis data. I’ve used google forms to ask people about their favourite things and to track my crappy internet speed during lockdown.\nTidy Tuesday\nEach Tuesday Thomas Mock releases a dataset on the Tidy Tuesday github, people all over the world plot the data to show soemthing interesting and then post their plot to twitter using the hastag #tidytuesday.\nOther options\nVicki Boykis has compiled a list of relatively small open datasets on her blog.\n\n\n\n",
+      "last_modified": "2020-12-01T08:34:48+11:00"
+    },
+    {
+      "path": "errors.html",
+      "title": "dealing with error messages",
+      "author": [
+        {
+          "name": "JuliaB",
+          "url": "https://example.com/norajones"
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\nAs you learn to work in R, you will notice that when R doesn’t understand your code it will flash a red error at you. These can look a little like this:\nError in addup(.) : could not find function \"addup\"\n\nMost of the time these errors are explicit enough for you to locate the fault and fix it. For example, the error above is clearly telling you that the function addup does’t exist. Maybe that is because you misspelt something or perhaps you haven’t loaded the package that has that function in it. Most errors are due to simple mistakes like not closing all the brackets, misspelling something, missing a comma etc.\nHowever, sometimes you might get more complicated sounding errors like this:\n\nError in codetools:::walkCode(ee, w) : \n  argument \"ee\" is missing, with no default\n  \nThis example doesn’t look nearly as friendly. This time it looks like a different language to you and that is totally normal. The best thing to do in this situation is to copy the error and paste it into google. Someone somewhere has probably had that error before and has asked the internet about it; maybe their solution will work for you too.\nBe careful though… errors may sometimes include variable names or other words specific to your data so it is best to avoid including these components in the google search.\nnot all messages are errors\nSometimes R is just trying to be helpful and what looks like an error message is just a warning or a reminder and not an error at all. Its only an error, if your code didn’t do what it was supposed to do. Don’t get too freaked out by the red, just read the messages carefully.\n\n\n\n",
+      "last_modified": "2020-12-01T08:34:49+11:00"
+    },
+    {
+      "path": "get_help.html",
+      "title": "How to get R help",
+      "author": [
+        {
+          "name": "JuliaB",
+          "url": "https://example.com/norajones"
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\nask Google\nGoogle is your best friend when you are looking for help with R issues; there are loads of blogs, websites and videos out there to help you. Sometimes there are TOO many resources; the overload sometimes means that you may find it difficult to find what you are looking for, especially if you are not sure how to use the correct R-speak.\nSo, when searching for a solution to an R-related problem information think of the best way to word what you are looking for, use the correct dataframe terms like ‘columns’ and ‘rows’ and R jargon like ‘function’. Try not to use too many words, ask for what you want to do and add ‘R’ or ‘rstats’ at the end (there are many other programmes for statistical computing which code differently so make sure you specify R in your search).\nask an expert\nSometimes the issue might be specific to your data so it might be difficult to find an example just like yours online. One way to overcome that is by making a post in an R community, and see if someone responds.\nMy favourite website for this is ‘Stack Overflow’ which is a question and answer site for professional and enthusiast programmers. You can get answers to your questions very quickly and it is a great way to share your knowledge and collaborate with others who are also working in R. The RStudio community is another community that welcomes you to share your problems https://community.rstudio.com/.\nwatch an expert\nSometimes it is helpful to watch someone else use a function/package to learn how it works. Reading a bunch of code might look confusing and scary but when you watch that code being typed out and explained is a much more beneficial experience especially for new R learners trying to grasp what R is all about. Googling “how to use X function in R youtube” is often a good alternative. Asking a question on twitter and adding the #rstats hashtag often results in a host of generous people who offer to help.\nhelp people help you\nWhen asking for help it is a good idea to do a bit of leg work to help people help you. If your problem is really specific to your dataset, making an example dataset that captures the problem but it is bit simpler is a good idea. There is even a package to help you do that. Check out the reprex (aka reproducible example) package by Jenny Bryan.\n\n\n\n",
+      "last_modified": "2020-12-01T08:34:50+11:00"
+    },
+    {
+      "path": "index.html",
+      "title": "So you are keen to learn R?",
+      "description": "Here is a list of our favourite learning resources\n",
+      "author": [],
+      "contents": "\n1. The R-Studio Education site\nAlison Hill and her team at RStudio have pulled together the best resources for beginners at the RStudio Education site. Cute art by Desiree de Leon make the site a joy to explore.\n\n\n\nFigure 1: The Beginners page from R-Studio Education\n\n\n\n2. R-Ladies Sydney #RYouWithMe\nThe #RYouWithMe course by R-Ladies Sydney is a series of online modules that walk you through getting data into R, cleaning it up a bit, visualising it, and reporting using RMarkdown. Lots of screencasts and practice exercises using enterococci data collected from Sydney beaches.\n\n\n\nFigure 2: RYouWithMe from R-Ladies Sydney\n\n\n\n3. Robust Tools course and YouTube channel\nDani has made a great site pulling her Robust Tools course materials into one place. Lots to be learned by watching her live code on the associated YouTube channel too.\n\n\n\nFigure 3: Robust Tools by Dani Navarro\n\n\n\n4. Teacup Giraffes\nIf you are looking for a gentle introduction to R and statistics and like a bit of cute, the statistics and teacup giraffe modules by Desiree de Leon and Hasse Walum are for you.\n\n\n\nFigure 4: Learning about standard deviation with Teacup Giraffes\n\n\n\n5. R for Data Science book\nIf books are more your scene, the free online R for Data Science book by Hadley Wickham is free online. Its definitely worth checking out this tidyverse bible.\n\n\n\nFigure 5: R for Data Science by Hadley Wickham\n\n\n\n6. Learning Statistics with R\nIf you are keen to go beyond wrangling and visualising and to get some analysis done in R, Dani’s book is a great place to start. It is genuinely fun to read (uncommon for a stats book) and covers basic statistical analysis. Also free and available online.\n\n\n\nFigure 6: Learning Statistics with R by Dani Navarro\n\n\n\n7. Statistics of DOOM by Erin Buchanan\nIf you like to watch youtube and learn stats, rather than read and learn stats, try Dr Erin Buchanan’s Statistics of DOOM youtube channel and associated website. She is an A/Prof at Missouri State and teaches tons of stats courses and gives them all away.\n\n\n\n",
+      "last_modified": "2020-12-01T08:34:51+11:00"
+    },
+    {
+      "path": "read.html",
+      "title": "useful reading",
+      "author": [
+        {
+          "name": "Jenny Richmond",
+          "url": "https://example.com/norajones"
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\nWhen you start to dip your toes into the world of reproducible analysis and open science, a whole new world of useful things to read opens up. The list below contains papers about how data science principles might apply to “real” science, because if you are a scientist, you are at your core, a data scientist.\nOpen Science\nLowndes, J., Best, B., Scarborough, C. et al. (2017). Our path to better science in less time using open data science tools. Nature Ecology & Evolution 1, 0160 (2017). https://doi.org/10.1038/s41559-017-0160\nWorkflow\nBroman, K., & Woo, K., (2018). Data Organization in Spreadsheets, American Statistician, 72, 2-10. https://doi.org/10.1080/00031305.2017.1375989\nGit and Github\nBryan, J., (2018). Excuse Me, Do You Have a Moment to Talk About Version Control? American Statistician, 72, 20-27. https://doi.org/10.1080/00031305.2017.1399928\nIf you are looking to get started with git and github, you can’t go past Jenny Bryan’s www.happygitwithr.com site.\n\n\n\n",
+      "last_modified": "2020-12-01T08:34:52+11:00"
+    }
+  ],
+  "collections": []
+}

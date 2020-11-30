@@ -1,7 +1,12 @@
 ---
 title: "useful reading"
-author: "Jen Richmond"
-output: html_document
+author:
+  - name: Jenny Richmond
+    url: https://example.com/norajones
+    affiliation: UNSW Psychology
+    affiliation_url: https://example.com/spacelysprokets
+date: "`r Sys.Date()`"
+output: distill::distill_article
 ---
 
 When you start to dip your toes into the world of reproducible analysis and open science, a whole new world of useful things to read opens up. The list below contains papers about how data science principles might apply to "real" science, because if you are a scientist, you are at your core, a data scientist. 

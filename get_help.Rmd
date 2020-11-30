@@ -1,7 +1,12 @@
 ---
 title: "How to get R help"
-author: "JuliaB"
-output: html_document
+author:
+  - name: JuliaB
+    url: https://example.com/norajones
+    affiliation: UNSW Psychology
+    affiliation_url: https://example.com/spacelysprokets
+date: "`r Sys.Date()`"
+output: distill::distill_article
 ---
 
 
