@@ -68,3 +68,5 @@ knitr::include_graphics("img/lsr.png")
 
 If you like to watch youtube and learn stats, rather than read and learn stats, try Dr Erin Buchanan's [Statistics of DOOM](https://www.youtube.com/channel/UCMdihazndR0f9XBoSXWqnYg) youtube channel and associated [website](https://statisticsofdoom.com/). She is an A/Prof at Missouri State and teaches tons of stats courses and gives them all away. 
 
+
+### 8. [Kelly Bodwin](https://www.youtube.com/channel/UCchB_GC3WYW8kuGPyllLE7Q) also teaches intro stats in R at CalStatePoly. Her youtube videos are also excellent
