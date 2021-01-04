@@ -1,8 +1,8 @@
 ---
 title: "Coding exercise 1"
 author: ""
-date: ""
-output: html_document
+date: "`r Sys.Date()`"
+output: distill::distill_article
 ---
 
 ```{r setup, include=FALSE}
@@ -38,6 +38,7 @@ mehr <- read_csv(here("data", "1_Mehr2016.csv"))
 Use glimpse() or names() or str() to get an idea what is included in the dataset
 
 ```{r datastructure}
+# glimpse
 
 ```
 
@@ -48,14 +49,14 @@ Use glimpse() or names() or str() to get an idea what is included in the dataset
 There are lots of variables in this data set that we wont need. Make a smaller data set that only includes id and the key dependent variables (baseline, familiarisation and test looking). 
 
 ```{r selectdata}
- 
+# select
 
 ```
 
 The key DV variables have unwieldy names. Rename them so they are easier to refer to in your code. 
 
 ```{r rename}
-
+# rename
 ```
 
 # Q1 familiarisation looking 
@@ -63,7 +64,7 @@ The key DV variables have unwieldy names. Rename them so they are easier to refe
 In this kind of experiment, it is important to confirm that infants looking at each kind of stimulus during the familiarisation phase is the same. Calculate the mean and sd for familiarisation looking at the familiar and unfamiliar stimulus. 
 
 ```{r summarystats}
-
+# summarise
 
 ```
 
@@ -72,7 +73,7 @@ Infants looked on average 501.71 ms at the familiar and 476.76 ms - it is hard t
 Make a new df that includes only id and the familiarisation data and use pivot_longer() to make the data into long format. You will end up with one column that has values of stimulus in it (familiar, unfamiliar) and one that has looking time values. 
 
 ```{r makedatalong}
-
+# pivot
 ```
 
 Great, now your dataframe has 192 observations instead of 96 observations. 
@@ -80,7 +81,7 @@ Great, now your dataframe has 192 observations instead of 96 observations.
 Use group_by and summarise to get a dataframe of summary stats, including mean, sd, n, stderror for each stimulus. 
 
 ```{r makesummarydf, message=FALSE, warning=FALSE}
-
+# group_by summarise
             
 ```
 
@@ -93,7 +94,7 @@ Use the summary df to make a column graph plotting mean looking as a function of
   + theme_apa will make the bar float off the x axis. Use  scale_y_continuous(limits = c(0,600), expand = c(0,0)) to extend the y axis to 600ms and make the bars sit on the x axis at 0,0
 
 ```{r plotfamlooking, message=FALSE, warning=FALSE}
-
+# plot fam looking
   
 ```
 
@@ -118,7 +119,8 @@ Replicate the process above for the test data...
 # make the data long
 
 
-#make summary stats
+
+# make summary stats
 
 
 # plot
@@ -136,18 +138,18 @@ Try geom_jitter and geom_boxplot to visualise the raw proportion scores at basel
 #### geom_jitter
 
 ```{r jitter}
-
+# jitter
 ```
 
 #### geom_boxplot
 ```{r boxplot}
-
+# box
 
 ```
 
 #### geom_boxplot + geom_jitter
 ```{r boxjitter}
-
+# box + jitter
 
 ```
 

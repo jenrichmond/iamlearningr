@@ -85,30 +85,30 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>I am learning R: useful reading</title>
+  <title>I am learning R: Coding exercise 4</title>
 
 
 
   <!--  https://schema.org/Article -->
   <meta property="article:published" itemprop="datePublished" content="2021-01-04"/>
   <meta property="article:created" itemprop="dateCreated" content="2021-01-04"/>
-  <meta name="article:author" content="Jenny Richmond"/>
+  <meta name="article:author" content=""/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="I am learning R: useful reading"/>
+  <meta property="og:title" content="I am learning R: Coding exercise 4"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="I am learning R"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="I am learning R: useful reading"/>
+  <meta property="twitter:title" content="I am learning R: Coding exercise 4"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["useful reading"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Jenny Richmond"]},{"type":"character","attributes":{},"value":["https://example.com/norajones"]},{"type":"character","attributes":{},"value":["UNSW Psychology"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]}]}]},{"type":"character","attributes":{},"value":["2021-01-04"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Coding exercise 4"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":[""]}]}]},{"type":"character","attributes":{},"value":["2021-01-04"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2014,7 +2014,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"useful reading","authors":[{"author":"Jenny Richmond","authorURL":"https://example.com/norajones","affiliation":"UNSW Psychology","affiliationURL":"https://example.com/spacelysprokets","orcidID":""}],"publishedDate":"2021-01-04T00:00:00.000+11:00","citationText":"Richmond, 2021"}
+{"title":"Coding exercise 4","authors":[{"author":"","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-01-04T00:00:00.000+11:00","citationText":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2073,29 +2073,132 @@ workshop
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>useful reading</h1>
+<h1>Coding exercise 4</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
 </div>
 
-<div class="d-byline">
-  Jenny Richmond <a href="https://example.com/norajones" class="uri">https://example.com/norajones</a> (UNSW Psychology)<a href="https://example.com/spacelysprokets" class="uri">https://example.com/spacelysprokets</a>
-  
-<br/>2021-01-04
-</div>
 
 <div class="d-article">
-<p>When you start to dip your toes into the world of reproducible analysis and open science, a whole new world of useful things to read opens up. The list below contains papers about how data science principles might apply to “real” science, because if you are a scientist, you are at your core, a data scientist.</p>
-<h3 id="open-science">Open Science</h3>
-<ol type="1">
-<li>Lowndes, J., Best, B., Scarborough, C. et al. (2017). Our path to better science in less time using open data science tools. Nature Ecology &amp; Evolution 1, 0160 (2017). <a href="https://doi.org/10.1038/s41559-017-0160" class="uri">https://doi.org/10.1038/s41559-017-0160</a></li>
-</ol>
-<h3 id="workflow">Workflow</h3>
-<p>Broman, K., &amp; Woo, K., (2018). Data Organization in Spreadsheets, American Statistician, 72, 2-10. <a href="https://doi.org/10.1080/00031305.2017.1375989" class="uri">https://doi.org/10.1080/00031305.2017.1375989</a></p>
-<h3 id="git-and-github">Git and Github</h3>
-<p>Bryan, J., (2018). Excuse Me, Do You Have a Moment to Talk About Version Control? American Statistician, 72, 20-27. <a href="https://doi.org/10.1080/00031305.2017.1399928" class="uri">https://doi.org/10.1080/00031305.2017.1399928</a></p>
-<p>If you are looking to get started with git and github, you can’t go past Jenny Bryan’s www.happygitwithr.com site.</p>
+<p>In this coding exercise, you will work with data from a study published in Psychological Science.</p>
+<p>Bastian, B., Jetten, J., &amp; Ferris, L. F. (2014). Pain as social glue: Shared pain increases cooperation. Psychological Science, 25, 2079-2085.</p>
+<h1 id="load-packages">load packages</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://here.r-lib.org/'>here</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/sfirke/janitor'>janitor</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/jonocarroll/ggeasy'>ggeasy</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/eclarke/ggbeeswarm'>ggbeeswarm</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'>RColorBrewer</span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/crsh/papaja'>papaja</a></span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<h1 id="read-in-the-data">read in the data</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>bastian</span> <span class='op'>&lt;-</span> <span class='fu'>read_csv</span><span class='op'>(</span><span class='fu'><a href='https://here.r-lib.org//reference/here.html'>here</a></span><span class='op'>(</span><span class='st'>"data"</span>, <span class='st'>"4_Bastian2014.csv"</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<p>In this experiment, participants were randomly assigned to the pain condition or the no pain condition. After completing painful (cold pressor, wall squat) or non painful tasks (getting balls or of a container), they completed a number of measures of cooperation and trust.</p>
+<p>The measures included… - positive and negative affect - challenge and thread response - rating level of bonding (7 difereent tems) with other participants on 7 point scales</p>
+<p>The manipulation checks included assessing the intensity and unpleasantness of the painful vs nonpainful tasks.</p>
+<h1 id="familiarise-yourself-with-the-data">familiarise yourself with the data</h1>
+<p>Use glimpse() or names() or str() to get an idea what is included in the dataset</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># glipse</span>
+</code></pre>
+</div>
+</div>
+<h1 id="make-the-variable-name-formatting-consistent">make the variable name formatting consistent</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># clean names</span>
+</code></pre>
+</div>
+</div>
+<h1 id="make-the-data-problem-smaller">make the data problem smaller</h1>
+<p>There are lots of variables that you wont need. Select just the variables related to participant id, group, PANAS scores, threat and challenge means, ratings of task intensity and pleasantness, and the 7 ratings to group bonding.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># select</span>
+</code></pre>
+</div>
+</div>
+<h1 id="q1-did-the-pain-manipulation-work">Q1: did the pain manipulation work?</h1>
+<p>Select just the ppid and condition variables along with those that relate to the manipulation check (unpleasantness and intensity), make them long so you have a single column called rating type (unpleasantness, intensity) and another with ratings.</p>
+<p>The condition values are 0 and 1, make them a factor so your plot will display properly.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># pivot</span>
+</code></pre>
+</div>
+</div>
+<p>Get some summary stats by group and plot the intensity and unpleasantness scores separately for participants in the pain vs no pain group</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># summary</span>
+</code></pre>
+</div>
+</div>
+<h1 id="q2-did-the-pain-manipulation-result-in-group-differences-in-pos-and-neg-affect-scores">Q2: did the pain manipulation result in group differences in pos and neg affect scores?</h1>
+<p>Select just ppid, condition and PANAS, make the data long, and plot group differences. Include standard error bars.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'>#plot</span>
+</code></pre>
+</div>
+</div>
+<h1 id="q3-was-the-pain-manipulation-more-threateningchallenging-than-the-control-task">Q3: was the pain manipulation more threatening/challenging than the control task?</h1>
+<p>Select just ppid, condition and threat challenge scores, make the data long, and plot group differences. Include standard error bars.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># plot</span>
+</code></pre>
+</div>
+</div>
+<h1 id="q4-did-the-pain-manipulation-result-in-differences-in-group-bonding">Q4: did the pain manipulation result in differences in group bonding?</h1>
+<p>Select variables related to ppid, condition, and group ratings. Make the group ratings long, and group_by participant and condition to get a mean rating score across the 7 bonding variables. Plot mean bonding scores as a function of group.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># pivot</span>
+</code></pre>
+</div>
+</div>
+<h1 id="extra-challenge">extra challenge</h1>
+<p>This dataset included all the raw ratings as well as summarised scores for the PANAS and threat/challenge scores. Look up the published paper and see if you can match the variables in the dataset to questionnaire items. Use your wrangling skills to verify that the summary scores for pos and neg and threat/challenge were calculated accurately.</p>
+<h3 id="verify-pos-scores">verify pos scores</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># verify pos</span>
+</code></pre>
+</div>
+</div>
+<h3 id="verify-neg-scores">verify neg scores</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># verify neg</span>
+</code></pre>
+</div>
+</div>
+<h3 id="verify-threat-scores">verify threat scores</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># verify thr</span>
+</code></pre>
+</div>
+</div>
+<h3 id="verify-challenge-scores">verify challenge scores</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># verify challenge</span>
+</code></pre>
+</div>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

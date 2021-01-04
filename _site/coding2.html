@@ -85,29 +85,30 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>I am learning R: About</title>
-
-  <meta property="description" itemprop="description" content="Here is how the workshop will work"/>
+  <title>I am learning R: Coding exercise 2</title>
 
 
+
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2021-01-04"/>
+  <meta property="article:created" itemprop="dateCreated" content="2021-01-04"/>
+  <meta name="article:author" content=""/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="I am learning R: About"/>
+  <meta property="og:title" content="I am learning R: Coding exercise 2"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Here is how the workshop will work"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="I am learning R"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="I am learning R: About"/>
-  <meta property="twitter:description" content="Here is how the workshop will work"/>
+  <meta property="twitter:title" content="I am learning R: Coding exercise 2"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["About"]},{"type":"character","attributes":{},"value":["Here is how the workshop will work"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Coding exercise 2"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":[""]}]}]},{"type":"character","attributes":{},"value":["2021-01-04"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2013,7 +2014,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"About","description":"Here is how the workshop will work","authors":[]}
+{"title":"Coding exercise 2","authors":[{"author":"","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-01-04T00:00:00.000+11:00","citationText":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2072,26 +2073,136 @@ workshop
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>About</h1>
+<h1>Coding exercise 2</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Here is how the workshop will work</p></p>
+
 </div>
 
 
 <div class="d-article">
-<p>The plan is to run weekly lunch time “code club” sessions, just for an hour or so over the next few weeks to help you get your head around what R is useful for and how you might use it with YOUR data.</p>
-<p>I ran a workshop at the AIMOS conference in Melbourne last year and the goal would be to cover the same kind of thing.</p>
-<ul>
-<li>why you might want to use R</li>
-<li>how to get data into R and cleaned up a bit</li>
-<li>how to get summary stats</li>
-<li>how to use the power of R to visualise your data</li>
-</ul>
-<p>I think there will be at least 3 sessions but we will play it by ear a little.</p>
-<p>Often with R training workshops they have you working with beautifully clean sample data, and that makes it tough when you get back to your lab and discover that your data is not at all behaving in the same way. In these sessions, we will go SUPER SLOW and have you working with your OWN data (if you already have it), so that we don’t run into generalisation problems (hopefully).</p>
-<p>We will start in Week 2, on Thursdays at 1pm. Access via zoom…</p>
-<p><a href="https://unsw.zoom.us/j/99976541554" class="uri">https://unsw.zoom.us/j/99976541554</a></p>
+<p>In this coding exercise, you will work with data from a study published in Psychological Science.</p>
+<p>Beall, A. T., Hofer, M. K., &amp; Shaller, M. (2016). Infections and elections: Did an Ebola outbreak influence the 2014 U.S. federal elections (and if so, how)? Psychological Science, 27, 595-605.</p>
+<h1 id="load-packages">load packages</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://here.r-lib.org/'>here</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/sfirke/janitor'>janitor</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/crsh/papaja'>papaja</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/njtierney/naniar'>naniar</a></span><span class='op'>)</span> <span class='co'># re missing data</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'>RColorBrewer</span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://rpkgs.datanovia.com/ggpubr/'>ggpubr</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://patchwork.data-imaginist.com'>patchwork</a></span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<h1 id="read-in-the-data">read in the data</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='va'>beall</span> <span class='op'>&lt;-</span> <span class='fu'>read_csv</span><span class='op'>(</span><span class='fu'><a href='https://here.r-lib.org//reference/here.html'>here</a></span><span class='op'>(</span><span class='st'>"data"</span>, <span class='st'>"2_Beall.csv"</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<h1 id="familiarise-yourself-with-the-data">familiarise yourself with the data</h1>
+<p>Use glimpse() or names() or str() to get an idea what is included in the dataset</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># glimpse</span>
+</code></pre>
+</div>
+</div>
+<h1 id="clean-up-the-data">clean up the data</h1>
+<p>The variables are inconsistently named (upper, lower, .). Use clean_names() to make them consistent.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># clean names</span>
+</code></pre>
+</div>
+</div>
+<p>The first couple of rows are also filled with NA (no data). Use slice(3:n()) to slice the data from row 3 until the end (n()). (you will end up with 65 obs)</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># slice</span>
+</code></pre>
+</div>
+</div>
+<p>There are lots of variables in this data set that we wont need. Make a smaller data set that only includes month, day, two_weeks, voter_intention_index, and ebola_search_volume_index.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># select</span>
+</code></pre>
+</div>
+</div>
+<h1 id="is-there-a-correlation-between-voter-intention-and-ebola">Is there a correlation between voter intention and ebola?</h1>
+<p>Use geom_point to make a scatter plot the relation between voter intention and ebola. Use theme_apa and add an informative title.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># scatter</span>
+</code></pre>
+</div>
+</div>
+Have a look at the <code>ggpubr</code> package and stat_cor() and see if you can get a correlation coefficient to display on the plot
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># stat_cor</span>
+</code></pre>
+</div>
+</div>
+<h1 id="plot-timeframes">Plot timeframes</h1>
+<h3 id="just-two-weeks-prior">just two weeks prior</h3>
+Restrict the data to only 2 weeks prior to the outbreak and plot again.
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># plot 2w</span>
+</code></pre>
+</div>
+</div>
+<h3 id="whole-month">Whole month</h3>
+<p>Restrict to just the month of september and plot date against voter intention. Then restrict to just October and plot date against voter intention.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># September</span>
+
+
+<span class='co'># October</span>
+</code></pre>
+</div>
+</div>
+<h3 id="part-of-month">Part of month</h3>
+<p>Restrict to just the last week september and plot date against voter intention. Then restrict to just the first week of October and plot date against voter intention</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># last week of September</span>
+
+
+<span class='co'># first week of October</span>
+</code></pre>
+</div>
+</div>
+<h1 id="missing-data">Missing data</h1>
+<p>There is so much missing data in the voter intention index. Take your data and select just the voter intention index and pipe it into naniar::vis_miss() to plot how much data is missing. 63% missing!!</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># vismiss</span>
+</code></pre>
+</div>
+</div>
+<p>Is there that much missing data for Sept?</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># vismiss sept</span>
+</code></pre>
+</div>
+</div>
+<p>What about October?</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='co'># vismiss oct</span>
+</code></pre>
+</div>
+</div>
+<p>Look up the original paper and see whether they were analysing voter intention with correlation, or whether the analysis involved more variables.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

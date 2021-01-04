@@ -2,6 +2,8 @@
 title: "About"
 description: |
   Here is how the workshop will work
+date: "`r Sys.Date()`"
+output: distill::distill_article
 ---
 
 ```{r setup, include=FALSE}

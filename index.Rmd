@@ -2,7 +2,8 @@
 title: "So you are keen to learn R?"
 description: |
   Here is a list of our favourite learning resources
-site: distill::distill_website
+date: "`r Sys.Date()`"
+output: distill::distill_article
 ---
 
 ```{r setup, include=FALSE}

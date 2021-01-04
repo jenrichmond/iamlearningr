@@ -1,8 +1,8 @@
 ---
 title: "git tips"
 author: "Jen Richmond"
-date: "10/09/2020"
-output: html_document
+date: "`r Sys.Date()`"
+output: distill::distill_article
 ---
 
 ```{r setup, include=FALSE}

@@ -1,8 +1,8 @@
 ---
 title: "Coding exercise 4"
 author: ""
-date: ""
-output: html_document
+date: "`r Sys.Date()`"
+output: distill::distill_article
 ---
 
 ```{r setup, include=FALSE}
@@ -47,13 +47,13 @@ The manipulation checks included assessing the intensity and unpleasantness of t
 Use glimpse() or names() or str() to get an idea what is included in the dataset
 
 ```{r datastructure}
-
+# glipse
 ```
 
 # make the variable name formatting consistent
 
 ```{r}
-
+# clean names
 
 ```
 
@@ -63,7 +63,7 @@ Use glimpse() or names() or str() to get an idea what is included in the dataset
 There are lots of variables that you wont need. Select just the variables related to participant id, group, PANAS scores, threat and challenge means, ratings of task intensity and pleasantness, and the 7 ratings to group bonding.
 
 ```{r}
-
+# select
 
 ```
 
@@ -75,13 +75,14 @@ Select just  the ppid and condition variables along with those that relate to th
 The condition values are 0 and 1, make them a factor so your plot will display properly. 
 
 ```{r}
+# pivot
 
 ```
 
 Get some summary stats by group and plot the intensity and unpleasantness scores separately for participants in the pain vs no pain group
 
 ```{r message=FALSE, warning=FALSE}
-
+# summary
 
 
 ```
@@ -92,7 +93,7 @@ Select just ppid, condition and PANAS, make the data long, and plot group differ
 
 ```{r message=FALSE, warning=FALSE}
 
-
+#plot
 
 ```
 
@@ -102,7 +103,7 @@ Select just ppid, condition and PANAS, make the data long, and plot group differ
 Select just ppid, condition and threat challenge scores, make the data long, and plot group differences. Include standard error bars. 
 
 ```{r message=FALSE, warning=FALSE}
-
+# plot
 ```
 
 # Q4: did the pain manipulation result in differences in group bonding?
@@ -110,7 +111,7 @@ Select just ppid, condition and threat challenge scores, make the data long, and
 Select variables related to ppid, condition, and group ratings. Make the group ratings long, and group_by participant and condition to get a mean rating score across the 7 bonding variables.  Plot mean  bonding scores as a function of group. 
 
 ```{r message=FALSE, warning=FALSE}
-
+# pivot
 ```
 
 # extra challenge
@@ -120,7 +121,7 @@ This dataset included all the raw ratings as well as summarised scores for the P
 ### verify pos scores
 
 ```{r message=FALSE, warning=FALSE}
-
+# verify pos
 
 
 
@@ -128,17 +129,17 @@ This dataset included all the raw ratings as well as summarised scores for the P
 ### verify neg scores
 
 ```{r message=FALSE, warning=FALSE}
-
+# verify neg
 
 ```
 ### verify threat scores
 
 ```{r message=FALSE, warning=FALSE}
-
+# verify thr
 ```
 
 ### verify challenge scores
 
 ```{r message=FALSE, warning=FALSE}
-
+# verify challenge
 ```

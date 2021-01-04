@@ -7,7 +7,6 @@ navbar:
   right:
     - text: "home"
       href: index.html
-    
     - text: "tips"
       menu:
         - text: "data"
