@@ -18,6 +18,18 @@ navbar:
           href: get_help.html
         - text: "read"
           href: read.html
+        - text: "git"
+          href: git_tips.html
+    - text: "practice"
+      menu:
+        - text: "code1"
+          href: coding1.html
+        - text: "code2"
+          href: coding2.html
+        - text: "code3"
+          href: coding3.html
+        - text: "code4"
+          href: coding4.html
     - text: "workshop"
       menu: 
         - text: "about"

@@ -1,0 +1,153 @@
+---
+title: "Coding exercise 1"
+author: ""
+date: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+In this coding exercise, you will work with data from a study published in Psychological Science. 
+
+Mehr, S. A., Song. L. A., & Spelke, E. S. (2016). For 5-month-old infants, melodies are social. Psychological
+Science, 27, 486-501. 
+
+# load packages
+
+```{r loadpackages, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(here)
+library(janitor)
+library(ggeasy)
+library(ggbeeswarm)
+library(RColorBrewer)
+library(papaja)
+
+```
+
+
+# read in the data
+
+```{r readdata, message=FALSE, warning=FALSE}
+mehr <- read_csv(here("data", "1_Mehr2016.csv"))
+```
+
+# familiarise yourself with the data
+Use glimpse() or names() or str() to get an idea what is included in the dataset
+
+```{r datastructure}
+
+```
+
+
+
+# clean up the data
+
+There are lots of variables in this data set that we wont need. Make a smaller data set that only includes id and the key dependent variables (baseline, familiarisation and test looking). 
+
+```{r selectdata}
+ 
+
+```
+
+The key DV variables have unwieldy names. Rename them so they are easier to refer to in your code. 
+
+```{r rename}
+
+```
+
+# Q1 familiarisation looking 
+
+In this kind of experiment, it is important to confirm that infants looking at each kind of stimulus during the familiarisation phase is the same. Calculate the mean and sd for familiarisation looking at the familiar and unfamiliar stimulus. 
+
+```{r summarystats}
+
+
+```
+
+Infants looked on average 501.71 ms at the familiar and 476.76 ms - it is hard to tell whether a difference of 25 ms will be  significantly different without plotting the data with standard error bars. 
+
+Make a new df that includes only id and the familiarisation data and use pivot_longer() to make the data into long format. You will end up with one column that has values of stimulus in it (familiar, unfamiliar) and one that has looking time values. 
+
+```{r makedatalong}
+
+```
+
+Great, now your dataframe has 192 observations instead of 96 observations. 
+
+Use group_by and summarise to get a dataframe of summary stats, including mean, sd, n, stderror for each stimulus. 
+
+```{r makesummarydf, message=FALSE, warning=FALSE}
+
+            
+```
+
+Use the summary df to make a column graph plotting mean looking as a function of stimulus. Make it fancy by ...
+
+1. adding error bars (I look [this post](http://jenrichmond.rbind.io/post/apa-figures/) up every time I do this)
+2. changing the colour of the bars (hint- you want to fill the bars rather than colouring them)
+3. changing the theme so the plot is apa style 
+  + hint- theme_apa() from the papaja package will be helpful
+  + theme_apa will make the bar float off the x axis. Use  scale_y_continuous(limits = c(0,600), expand = c(0,0)) to extend the y axis to 600ms and make the bars sit on the x axis at 0,0
+
+```{r plotfamlooking, message=FALSE, warning=FALSE}
+
+  
+```
+
+Great! looks like the error bars overlap, so there is unlikely to be a significant difference in the amount of time that infants looked at familiar vs. unfamiliar during the familiarisation. 
+
+# Q2 baseline vs. test looking
+
+The other DV in this experiment is the propootion of time that infants spend looking at the person who was associated with the familiar song. The authors expected infants not to show any preferneces at baseline and that looking time at the person who sung the familiar song would be about 0.50. At test, however, if infants associate people with familiar music, the authors expected infants to show a preference for the person who sung the song that was familiar to them i.e. to look > 0.50. 
+
+Replicate the process above for the test data...
+1. start with the renamed df and select just id and the variables associated with the test
+2. make the data long so you have one column with test time in it (baseline, test) and one with proportion scores
+3. use group_by and summarise to make a df of summary stats (mean, sd, n, stderror)
+4. plot the proportion scores as a function of test time, including error bars. Try some fancy things with this plot...
+  + maybe add a dashed horizontal line at 0.5 
+  + try a different colour palette with RColorBrewer, type display.brewer.all() in the console to see all the options
+  + add a title to the plot, maybe a caption at the bottom
+  + see if you can remove the legend, its not really necessary
+
+
+```{r alltestlooking}
+# make the data long
+
+
+#make summary stats
+
+
+# plot
+
+```
+
+
+# Other questions
+
+### How variable are infants looking preferences in this task? 
+
+Try geom_jitter and geom_boxplot to visualise the raw proportion scores at baseline and test. Try layering the jitter on top of the boxplot. You might want to make the point transparent using alpha = 0.5
+
+
+#### geom_jitter
+
+```{r jitter}
+
+```
+
+#### geom_boxplot
+```{r boxplot}
+
+
+```
+
+#### geom_boxplot + geom_jitter
+```{r boxjitter}
+
+
+```
+
