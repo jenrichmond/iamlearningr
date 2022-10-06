@@ -1,7 +1,7 @@
 name: "i-am-learning-r"
-title: "I am learning R"
+title: "i am learning R"
 description: |
-  I am learning R
+  i am learning R
 output_dir: "_site"
 navbar:
   right:
