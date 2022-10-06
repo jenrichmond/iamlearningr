@@ -9,7 +9,7 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-In this coding exercise, you will work with data from a study published in Psychological Science. 
+In this coding exercise, you will work with data from a study published in Psychological Science. You can [download the data file here](https://github.com/jenrichmond/iamlearningr/blob/master/data/4_Bastian2014.csv) or use the code below to read it straight from github. 
 
 Bastian, B., Jetten, J., & Ferris, L. F. (2014). Pain as social glue: Shared pain increases cooperation. Psychological Science, 25, 2079-2085.
 
@@ -29,7 +29,7 @@ library(papaja)
 # read in the data
 
 ```{r readdata, message=FALSE, warning=FALSE}
-bastian <- read_csv(here("data", "4_Bastian2014.csv"))
+bastian <- read_csv("https://raw.githubusercontent.com/jenrichmond/iamlearningr/master/data/4_Bastian2014.csv")
 ```
 
 In this experiment, participants were randomly assigned to the pain condition or the no pain condition. After completing painful (cold pressor, wall squat) or non painful tasks (getting balls or of a container), they completed a number of measures of cooperation and trust.

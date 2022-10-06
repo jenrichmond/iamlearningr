@@ -9,7 +9,7 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-In this coding exercise, you will work with data from a study published in Psychological Science. 
+In this coding exercise, you will work with data from a study published in Psychological Science. You can [download the data file here](https://github.com/jenrichmond/iamlearningr/blob/master/data/3_Atir2015.csv) or use the code below to read it straight from github. 
 
 Atir, S., Rosenzweig, E., & Dunning, D. (2015). When knowledge knows no bounds: Self-perceived expertise predicts claims of impossible knowledge. Psychological Science, 26, 1295-1303.
 
@@ -31,7 +31,7 @@ library(ggpubr)
 # read in the data
 
 ```{r readdata, message=FALSE, warning=FALSE}
-atir <- read_csv(here("data", "3_Atir2015.csv"))   
+atir <- read_csv("https://raw.githubusercontent.com/jenrichmond/iamlearningr/master/data/3_Atir2015.csv")   
 ```
 
 # familiarise yourself with the data

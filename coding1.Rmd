@@ -9,7 +9,7 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-In this coding exercise, you will work with data from a study published in Psychological Science. 
+In this coding exercise, you will work with data from a study published in Psychological Science. You can [download the data file here](https://github.com/jenrichmond/iamlearningr/blob/master/data/1_Mehr2016.csv) or use the code below to read it straight from github. 
 
 Mehr, S. A., Song. L. A., & Spelke, E. S. (2016). For 5-month-old infants, melodies are social. Psychological
 Science, 27, 486-501. 
@@ -31,7 +31,9 @@ library(papaja)
 # read in the data
 
 ```{r readdata, message=FALSE, warning=FALSE}
-mehr <- read_csv(here("data", "1_Mehr2016.csv"))
+mehr <- read_csv("https://raw.githubusercontent.com/jenrichmond/iamlearningr/master/data/1_Mehr2016.csv")
+
+
 ```
 
 # familiarise yourself with the data

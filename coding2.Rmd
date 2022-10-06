@@ -9,7 +9,7 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-In this coding exercise, you will work with data from a study published in Psychological Science. 
+In this coding exercise, you will work with data from a study published in Psychological Science. You can [download the data file here](https://github.com/jenrichmond/iamlearningr/blob/master/data/2_Beall.csv) or use the code below to read it straight from github. 
 
 Beall, A. T., Hofer, M. K., & Shaller, M. (2016). Infections and elections: Did an Ebola outbreak influence the 2014 U.S. federal elections (and if so, how)? Psychological Science, 27, 595-605.
 
@@ -31,7 +31,7 @@ library(patchwork)
 # read in the data
 
 ```{r readdata, message=FALSE, warning=FALSE}
-beall <- read_csv(here("data", "2_Beall.csv"))
+beall <- read_csv("https://raw.githubusercontent.com/jenrichmond/iamlearningr/master/data/2_Beall.csv")
 ```
 
 # familiarise yourself with the data
